@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title> Caesar cipher </title>
+</head>
+<body>
+    <label class="text-label"> Text: </label>
+    <div class="main-container">
+        <div class="text-container">
+            <textarea id="text"></textarea>
+        </div>
+        <div class="options">
+            <h2> Options </h2> 
+            <div class="container">
+                <div class="shift-container">
+                    <label > Shift: </label>
+                    <input id="shift" type="number" min="0" placeholder="shift">
+                </div>
+                <div class="checkbox">
+                    <label> Special characters </label>
+                    <input type="checkbox" id="special-characters">
+                </div>
+                <div class="checkbox">
+                    <label> Respect case </label>
+                    <input type="checkbox" id="respect-case">
+                </div>
+                <div class="checkbox">
+                    <label> Include spaces </label>
+                    <input type="checkbox" id="include-spaces">
+                </div>
+                <div class="btn">
+                    <button id="encrypt-Btn"> encrypt </button>
+                    <button id="decrypt-Btn"> decrypt </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="secondary-container">
+        <h2> Encrypted / Decrypted Text: </h2>
+        <textarea id="result-area"></textarea>
+    </div>
+</body>
+</html>
